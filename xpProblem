@@ -1,0 +1,16 @@
+https://blog.miniasp.com/post/2012/04/27/Grant-normal-user-right-on-Logon-as-a-batch-job
+
+2.On Windows XP professional, do the following:
+
+  Click Start
+  Click into Control Panel
+  Click into Administrative Tools
+  Click into Local Security Policy
+  Click into Security Settings>Local Policies>Security Options
+  Ensure the option ‘Accounts: Limit local account…’ is disabled. It’s enabled by default.
+  On Windows XP home:
+
+  Go to Start>Run>Regedit
+  Navigate to the following key: HKEY_LOCAL_MACHINESYSTEMCurrentControlSetControlLsa
+  Find the value name: limitblankpassworduse
+  And change the entry. 0 is disabled, 1 is enabled
